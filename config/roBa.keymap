@@ -52,10 +52,19 @@
 &kp Q      &kp W         &kp E         &kp R                        &kp T                                                                 &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F                        &kp G        &none                              &kp NON_US_BACKSLASH  &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z      &kp X         &kp C         &kp V                        &kp B        &kp GRAVE                          &kp SEMICOLON         &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE         &lt 1 ENTER                             &kp DEL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE         &lt 2 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&behavior_rotate_mouse_wheel>;
+        };
+
+        number {
+            bindings = <
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp N1           &kp N2       &kp N3    &kp N4      &kp N5       &trans      &trans  &kp N6     &kp N7         &kp N8            &kp N9                &kp N0
+&trans           &trans       &trans    &trans      &trans       &trans      &trans  &trans     &trans         &kp LEFT_BRACKET  &kp RBKT              &kp SINGLE_QUOTE
+&trans           &trans       &trans    &trans      &trans       &trans      &trans  &trans                                                            &trans
+            >;
         };
 
         FUNCTION {
@@ -111,15 +120,6 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
-            >;
-        };
-
-        number {
-            bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp N1           &kp N2       &kp N3    &kp N4      &kp N5       &trans      &trans  &kp N6     &kp N7         &kp N8        &kp N9                &kp N0
-&trans           &trans       &trans    &trans      &trans       &trans      &trans  &trans     &trans         &trans        &trans                &trans
-&trans           &trans       &trans    &trans      &trans       &trans      &trans  &trans                                                        &trans
             >;
         };
     };
