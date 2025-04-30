@@ -113,5 +113,14 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
+
+        number {
+            bindings = <
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp N1           &kp N2       &kp N3    &kp N4      &kp N5       &trans      &trans  &kp N6     &kp N7         &kp N8        &kp N9                &kp N0
+&trans           &trans       &trans    &trans      &trans       &trans      &trans  &trans     &trans         &trans        &trans                &trans
+&trans           &trans       &trans    &trans      &trans       &trans      &trans  &trans                                                        &trans
+            >;
+        };
     };
 };
