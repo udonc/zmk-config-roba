@@ -50,9 +50,9 @@
         alpha {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R             &kp T                                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F             &kp G                 &none                           &kp SINGLE_QUOTE  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp A      &kp S         &kp D         &kp F             &kp G                 &kp K_MUTE                      &kp SINGLE_QUOTE  &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z      &kp X         &kp C         &kp V             &kp B                 &kp GRAVE                       &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI TAB  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 4 LC(SPACE)      &lt 2 BACKSPACE   &lt 1 ENTER                             &sl 2
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI TAB  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 3 LC(SPACE)      &lt 2 BACKSPACE   &lt 1 ENTER                             &sl 4
             >;
 
             sensor-bindings = <&behavior_rotate_mouse_wheel>;
@@ -67,21 +67,12 @@
             >;
         };
 
-        fn {
+        arrow_fn {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F11      &kp F12  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans       &trans   &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans   &trans                          &trans
-            >;
-        };
-
-        arrow {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp LC(LEFT)  &kp LC(DOWN)   &kp LC(UP)   &kp LC(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP  &kp END        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                   &trans
+&kp F1  &kp F2   &kp F3   &kp F4   &trans                      &kp LC(LEFT)  &kp LC(DOWN)   &kp LC(UP)   &kp LC(RIGHT)  &trans
+&kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans      &trans  &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
+&kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans      &trans  &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP  &kp END        &trans
+&trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans                                                   &trans
             >;
         };
 
