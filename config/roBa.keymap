@@ -6,7 +6,6 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
-
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 
 &mt {
@@ -62,10 +61,10 @@
 
         number {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp N1           &kp N2       &kp N3    &kp N4      &kp N5       &trans      &trans  &kp N6     &kp N7         &kp N8            &kp N9                &kp N0
-&trans           &trans       &trans    &trans      &trans       &trans      &trans  &kp MINUS  &kp EQUAL      &kp LEFT_BRACKET  &kp RBKT              &kp NON_US_BACKSLASH
-&trans           &trans       &trans    &trans      &trans       &trans      &trans  &trans                                                            &trans
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                         &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp N1           &kp N2       &kp N3    &kp N4      &kp N5       &trans         &trans  &kp N6     &kp N7         &kp N8            &kp N9                &kp N0
+&trans           &trans       &trans    &trans      &trans       &trans         &trans  &kp MINUS  &kp EQUAL      &kp LEFT_BRACKET  &kp RBKT              &kp NON_US_BACKSLASH
+&trans           &trans       &trans    &trans      &trans       &kp LCTRL      &trans  &trans                                                            &trans
             >;
         };
 
