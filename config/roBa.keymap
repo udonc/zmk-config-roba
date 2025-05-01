@@ -49,10 +49,10 @@
 
         alpha {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R             &kp T                                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F             &kp G                 &none                           &kp SINGLE_QUOTE         &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z      &kp X         &kp C         &kp V             &kp B                 &kp GRAVE                       &kp SEMICOLON            &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI TAB  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 4 LC(SPACE)      &mt RIGHT_GUI BACKSPACE  &lt 0 ENTER                             &sl 5
+&kp Q      &kp W         &kp E         &kp R             &kp T                                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F             &kp G                 &none                           &kp SINGLE_QUOTE  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z      &kp X         &kp C         &kp V             &kp B                 &kp GRAVE                       &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI TAB  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 4 LC(SPACE)      &lt 2 BACKSPACE   &lt 1 ENTER                             &sl 2
             >;
 
             sensor-bindings = <&behavior_rotate_mouse_wheel>;
