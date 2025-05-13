@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "BEHAVIOR_ROTATE_MOUSE_WHEEL";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <20>;
         };
