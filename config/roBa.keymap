@@ -30,7 +30,7 @@
         compatible = "zmk,combos";
 
         layer_to_system {
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <40 41>;
             layers = <0>;
         };
@@ -73,7 +73,7 @@
         SYMBOL_MOUSE {
             bindings = <
 &kp QMARK  &trans    &kp EXCL   &trans  &kp TILDE                       &trans    &trans     &trans     &kp PIPE   &kp PRCNT
-&kp AT     &kp STAR  &kp DLLR   &trans  &kp GRAVE  &trans      &trans   &kp HASH  &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans
+&kp AT     &kp STAR  &kp DLLR   &trans  &kp GRAVE  &trans      &trans   &kp HASH  &mkp LCLK  &mkp RCLK  &mkp MCLK  &to 5
 &trans     &trans    &kp CARET  &trans  &trans     &trans      &trans   &trans    &kp AMPS   &trans     &trans     &trans
 &trans     &trans    &trans     &trans  &trans     &trans      &kp DEL  &trans                                     &trans
             >;
@@ -103,6 +103,15 @@
 &trans  &trans  &kp LC(UP_ARROW)  &kp LC(DOWN)  &trans  &trans      &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
 &trans  &trans  &trans            &trans        &trans  &trans      &trans  &trans    &trans    &trans  &trans     &trans
 &trans  &trans  &trans            &trans        &trans  &trans      &trans  &trans                                 &trans
+            >;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
