@@ -68,7 +68,7 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LC(SPACE)  &mt LEFT_SHIFT SPACE  &lt 1 TAB       &lt 2 BACKSPACE  &lt 4 ENTER                             &kp ESC
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         SYMBOL_MOUSE {
