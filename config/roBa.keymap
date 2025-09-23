@@ -10,6 +10,7 @@
 
 &trackball {
     // automouse-layer = <4>;
+
     scroll-layers = <5>;
 
     // arrows {
@@ -30,7 +31,7 @@
         compatible = "zmk,combos";
 
         layer_to_system {
-            bindings = <&to 6>;
+            bindings = <&mo 6>;
             key-positions = <40 41>;
             layers = <0>;
         };
@@ -73,7 +74,7 @@
         SYMBOL_MOUSE {
             bindings = <
 &kp QMARK  &trans    &kp EXCL   &trans  &kp TILDE                       &trans    &trans     &trans     &kp PIPE   &kp PRCNT
-&kp AT     &kp STAR  &kp DLLR   &trans  &kp GRAVE  &trans      &trans   &kp HASH  &mkp LCLK  &mkp RCLK  &mkp MCLK  &to 5
+&kp AT     &kp STAR  &kp DLLR   &trans  &kp GRAVE  &trans      &trans   &kp HASH  &mkp LCLK  &mkp RCLK  &mkp MCLK  &mo 5
 &trans     &trans    &kp CARET  &trans  &trans     &trans      &trans   &trans    &kp AMPS   &trans     &trans     &trans
 &trans     &trans    &trans     &trans  &trans     &trans      &kp DEL  &trans                                     &trans
             >;
