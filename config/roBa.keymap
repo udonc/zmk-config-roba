@@ -89,6 +89,8 @@
 &trans     &trans    &kp CARET  &trans  &kp BACKSLASH  &trans      &trans  &kp AMPS       &kp LEFT   &kp DOWN  &kp RIGHT  &trans
 &trans     &trans    &trans     &trans  &trans         &trans      &trans  &kp BACKSPACE                                  &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         NUMBER_BRACKET {
