@@ -33,7 +33,7 @@
         compatible = "zmk,combos";
 
         layer_to_system {
-            bindings = <&mo 3>;
+            bindings = <&mo 2>;
             key-positions = <40 41>;
             layers = <0>;
         };
@@ -73,24 +73,13 @@
 
         DEFAULT {
             bindings = <
-&kp Q        &kp W         &kp E         &kp R                &kp T                                                &kp Y            &kp U  &kp I      &kp O    &kp P
-&mt LCTRL A  &kp S         &kp D         &kp F                &kp G                 &kp K_MUTE      &kp EQUAL      &kp H            &kp J  &kp K      &kp L    &kp MINUS
-&kp Z        &kp X         &kp C         &kp V                &kp B                 &kp SQT         &kp SEMICOLON  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL    &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI ESCAPE  &mt LEFT_SHIFT SPACE  &lt 1 TAB       &lt 2 COLON    &mt RCTRL ENTER                             &lt 4 PRINTSCREEN
+&kp Q        &kp W           &kp E         &kp R                &kp T                                                &kp Y            &kp U              &kp I       &kp O            &kp P
+&mt LCTRL A  &mt S LEFT_ALT  &mt D LCMD    &mt F LEFT_SHIFT     &kp G                 &kp K_MUTE      &kp EQUAL      &kp H            &mt J RIGHT_SHIFT  &mt K RCMD  &mt L RIGHT_ALT  &mt MINUS RCTRL
+&kp Z        &kp X           &kp C         &kp V                &kp B                 &kp SQT         &kp SEMICOLON  &kp N            &kp M              &kp COMMA   &kp DOT          &kp SLASH
+&kp LCTRL    &kp LEFT_WIN    &kp LEFT_ALT  &mt LEFT_GUI ESCAPE  &mt LEFT_SHIFT SPACE  &lt 5 TAB       &lt 1 COLON    &mt RCTRL ENTER                                                  &lt 3 PRINTSCREEN
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
-        };
-
-        SYMBOL_MOUSE_ARROW {
-            bindings = <
-&kp QMARK  &trans    &kp EXCL   &trans  &kp TILDE                                 &trans         &trans     &trans    &kp PIPE   &kp PRCNT
-&kp AT     &kp STAR  &kp DLLR   &trans  &kp GRAVE      &trans      &trans         &kp HASH       &mkp LCLK  &kp UP    &mkp RCLK  &trans
-&trans     &trans    &kp CARET  &trans  &kp BACKSLASH  &trans      &trans         &kp AMPS       &kp LEFT   &kp DOWN  &kp RIGHT  &trans
-&trans     &trans    &trans     &trans  &trans         &trans      &kp LG(SPACE)  &kp BACKSPACE                                  &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         NUMBER_BRACKET {
@@ -117,6 +106,26 @@
 &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        SYMBOL_MOUSE_ARROW {
+            bindings = <
+&kp QMARK  &trans    &kp EXCL   &trans  &kp TILDE                                 &trans         &trans     &trans    &kp PIPE   &kp PRCNT
+&kp AT     &kp STAR  &kp DLLR   &trans  &kp GRAVE      &trans      &trans         &kp HASH       &mkp LCLK  &lt 5 UP  &mkp RCLK  &trans
+&trans     &trans    &kp CARET  &trans  &kp BACKSLASH  &trans      &trans         &kp AMPS       &kp LEFT   &kp DOWN  &kp RIGHT  &trans
+&trans     &trans    &trans     &trans  &trans         &trans      &kp LG(SPACE)  &kp BACKSPACE                                  &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
